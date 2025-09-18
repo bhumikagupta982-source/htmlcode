@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - My Movie World</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url("https://images.squarespace-cdn.com/content/v1/5d84f67139f5c013ae7e9a3f/1569510720404-HIJTI5DN6T7SUCDS0WFF/contact+us+page+background.png?format=2500w") no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 50px;
+    }
+    h2 {
+      color: gold;
+      margin-bottom: 20px;
+    }
+    .contact-box {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      border-radius: 10px;
+      width: 60%;
+      margin: 0 auto;
+      box-shadow: 0 0 15px black;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      text-align: left;
+    }
+    input, textarea {
+      width: 95%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+    }
+    button {
+      padding: 10px 20px;
+      background: gold;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: orange;
+    }
+  </style>
+</head>
+<body>
+  <h2>Contact Us</h2>
+  <div class="contact-box">
+    <form>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+      <label for="message">Your Message:</label>
+      <textarea id="message" rows="4" placeholder="Write your message..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhumika Resume</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #fdfdfd;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;   
+            margin-right: 20px;
+            border: 2px solid #b41414;
+        }
+        h2 {
+            color: rgb(180, 20, 20);
+            padding-bottom: 5px;
+        }
+        p, h4, li {
+            font-size: 15px;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        input, textarea {
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #888;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        input:focus, textarea:focus {
+            border: 2px solid dodgerblue;
+            background-color: #eef7ff;
+            outline: none;
+        }
+        input:hover, textarea:hover {
+            background-color: #f9f9f9;
+        }
+        input[type="radio"]:checked {
+            outline: 2px solid crimson;
+        }
+        input[type="submit"] {
+            background-color: rgb(180, 20, 20);
+            color: white;
+            cursor: pointer;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+        input[type="submit"]:hover {
+            background-color: rgb(80, 145, 214);
+        }
+        ul li:nth-child(odd) {
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="WhatsApp Image 2025-06-07 at 06.33.02 (1).jpeg" alt="Bhumika Photo">
+        <div>
+            <h2>Bhumika Gupta</h2>
+            <p><b>E-mail:</b> Bhumikagupta982@gmail.com</p>
+            <h4>Mob.No: +91 9826386248</h4>
+        </div>
+    </div>
+    <h2>Education</h2>
+    <ul>
+        <li>12th M.P. Board (M.M.H.Secondary School, Balaghat(M.P.))</li>
+        <li>Bsc 3rd year running (Raja Shankar Shah University, Chhindwara)</li>
+        <li>DCA</li>
+        <li>5G Technician</li>
+        <li>Yoga & Meditation</li>
+        <li>Java & DSA (TechnoSkill, Balaghat)</li>
+    </ul>
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML, CSS</li>
+        <li>Graphic Design</li>
+        <li>AI & Content Creation</li>
+    </ul>
+    <h2>Internship / Freelance</h2>
+    <ul>
+        <li>Web Development Intern - <b>Techno Skill Institute, Balaghat</b></li>
+        <li>Graphic Design Freelance - <b>College projects & Practicals</b></li>
+        <li>See my little mini table project <a href="table2.html">click here</a></li>
+    </ul>
+    <h2>Contact</h2>
+    <form action="submit" method="post">
+        <label>Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        <label>Number:</label><br>
+        <input type="number" id="number" name="number"><br><br>
+        <label>Gender:</label><br>
+        <input type="radio" name="Gender" value="Male"> Male
+        <input type="radio" name="Gender" value="Female"> Female <br><br>
+        <label for="desc">Message:</label><br>
+        <textarea id="desc" name="description" rows="5" cols="30" 
+        placeholder="Write Something About Yourself.."></textarea><br><br>
+        <input type="submit" name="submit" value="Submit">
+    </form>
+</body>
+</html>

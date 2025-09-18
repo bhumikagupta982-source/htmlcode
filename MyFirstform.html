@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>doc Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 20px;
+        }
+        h1 {
+            background-color: rgb(142, 255, 202);
+            color: rgb(74, 34, 156);
+            text-align: center;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        h4 {
+            margin: 15px 0;
+        }
+        input {
+            padding: 8px;
+            width: 250px;
+            border: 1px solid #888;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        select {
+            padding: 8px;
+            width: 260px;
+            border: 1px solid #666;
+            border-radius: 5px;
+            font-size: 14px;
+            background-color: #fff;
+        }
+        textarea {
+            padding: 10px;
+            width: 280px;
+            border: 1px solid #999;
+            border-radius: 6px;
+            font-size: 14px;
+            resize: none; 
+        }
+        input:focus {
+            border: 2px solid dodgerblue;
+            background-color: #eef7ff;
+            outline: none;
+        }
+        select:focus {
+            border: 2px solid seagreen;
+            background-color: #f0fff0;
+            outline: none;
+        }
+        textarea:focus {
+            border: 2px solid darkorange;
+            background-color: #fff8ef;
+            outline: none;
+        }
+        input:hover {
+            background-color: #f9f9f9;
+        }
+        select:hover {
+            background-color: #f5fff5;
+        }
+        textarea:hover {
+            background-color: #fffaf5;
+        }
+        h4:nth-child(even) {
+            color: rgb(14, 14, 218);
+        }
+        input[type="submit"] {
+            background-color: rgb(177, 11, 227);
+            color: rgb(5, 0, 0);
+            cursor: pointer;
+            width: 120px;
+            border: none;
+            padding: 10px;
+            font-size: 15px;
+            border-radius: 8px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: rgb(186, 162, 234);
+        }
+    </style>
+</head>
+<body>
+    <h1>
+         TECHNO SKILL <br> COCAING CLASSES
+    </h1>
+    <u><h2>Registration</h2></u>
+
+    <h4><label for="name">Your Name</label><br>
+        <input type="text" id="name" name="name" required> </h4>
+
+    <h4><label for="city">City</label><br>
+        <select id="city" name="Country">
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="Thailand">Thailand</option>
+        </select>
+    </h4>
+
+    <h4><label for="mob">Mob. No.</label><br>
+        <input type="number" id="mob" name="mobile" required>
+    </h4>
+
+    <h4><label for="email">Email ID</label><br>
+        <input type="email" id="email" name="email" required>
+    </h4>
+
+    <h4><label for="password">Password</label><br>
+        <input type="password" id="password" name="password" required>
+    </h4>
+
+    <h4><label for="desc">Tell Me:</label><br>
+        <textarea id="desc" name="description" rows="5" cols="30" 
+        placeholder="Write Something About Yourself.."></textarea>
+    </h4>
+
+    <h4>
+        Course <br>
+        <label><input type="radio" name="Course" value="Java & DSA"> Java & DSA</label><br>
+        <label><input type="radio" name="Course" value="Web Development"> Web Development</label><br>
+        <label><input type="radio" name="Course" value="Python"> Python</label><br>
+        <label><input type="radio" name="Course" value="AI & Graphic Design"> AI & Graphic Design</label>
+    </h4>
+
+    <h4>
+        Gender <br>
+        <label><input type="radio" name="Gender" value="Male"> Male</label><br>
+        <label><input type="radio" name="Gender" value="Female"> Female</label>
+    </h4>
+
+    <h4>
+        <input type="submit" value="Register">
+    </h4>
+</body>
+</html>
